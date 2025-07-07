@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Play, Calendar, ArrowRight, Users, Award, Target } from 'lucide-react';
+import { Award, Calendar, ArrowRight, Users, Play, Target } from 'lucide-react';
 
 const Home = () => {
   const stats = [
@@ -78,7 +78,7 @@ const Home = () => {
                   to="/about"
                   className="border-2 border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 group"
                 >
-                  <Play size={20} />
+                  <Award size={20} />
                   My Story
                 </Link>
               </motion.div>
