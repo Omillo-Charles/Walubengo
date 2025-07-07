@@ -30,6 +30,23 @@ Benny Hinn Walubengo is a renowned orator, founder of the Voice of Benny Foundat
 
 ---
 
+## 🧠 Key Philosophy
+"Speak Boldly. Lead Humbly." – Benny Hinn Walubengo
+This site embodies Benny's mission to raise a generation that speaks with clarity, leads with character, and lives with purpose.
+
+## 🤝 Contributing
+This is a personal brand website; contributions are currently limited to authorized collaborators. If you'd like to suggest improvements or join the project team, please reach out via the contact form on the site.
+
+## 📩 Contact
+For bookings, partnerships, or media appearances:
+
+📧 Email: benny@voiceofbenny.org
+🌐 Website: https://walubengo.vercel.app
+
+© 2025 Benny Hinn Walubengo
+All rights reserved.
+
+
 ## 📂 Folder Structure
 
 ```bash
@@ -49,14 +66,16 @@ Benny Hinn Walubengo is a renowned orator, founder of the Voice of Benny Foundat
 /styles
   - globals.css        # Tailwind styles
 
-🧠 Key Philosophy
+---
+
+## 🧠 Key Philosophy
 "Speak Boldly. Lead Humbly." – Benny Hinn Walubengo
 This site embodies Benny's mission to raise a generation that speaks with clarity, leads with character, and lives with purpose.
 
-🤝 Contributing
+## 🤝 Contributing
 This is a personal brand website; contributions are currently limited to authorized collaborators. If you'd like to suggest improvements or join the project team, please reach out via the contact form on the site.
 
-📩 Contact
+## 📩 Contact
 For bookings, partnerships, or media appearances:
 
 📧 Email: benny@voiceofbenny.org
