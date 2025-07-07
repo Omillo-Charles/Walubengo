@@ -48,13 +48,13 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      details: ["hello@bennyhinn.com", "bookings@voiceofbenny.org"],
+      details: ["officialbennyhinnwalubengo@gmail.com"],
       action: "Send Email"
     },
     {
       icon: <Phone size={24} />,
       title: "Phone",
-      details: ["+254 700 123 456", "+254 711 987 654"],
+      details: ["+254 794 959 895"],
       action: "Call Now"
     },
     {
@@ -325,7 +325,7 @@ const Contact = () => {
                 <h4 className="font-bold text-gray-900 mb-2">Quick Connect</h4>
                 <p className="text-gold-600 mb-4">Need immediate assistance? Connect with us on WhatsApp for faster response.</p>
                 <a
-                  href="https://wa.me/254700123456"
+                  href="https://wa.me/254794959895"
                   className="bg-gold-600 hover:bg-gold-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2 hover:shadow-lg hover:scale-105"
                 >
                   <MessageCircle size={20} />

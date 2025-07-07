@@ -33,7 +33,7 @@ const Terms = () => (
       </section>
       <section>
         <h2 className="text-2xl font-semibold text-gold-600 mb-2">Contact Information</h2>
-        <p className="text-gray-700">If you have any questions about these Terms, please contact us at <a href="mailto:hello@bennyhinn.com" className="text-gold-600 underline">hello@bennyhinn.com</a>.</p>
+        <p className="text-gray-700">If you have any questions about these Terms, please contact us at <a href="mailto:officialbennyhinnwalubengo@gmail.com" className="text-gold-600 underline">officialbennyhinnwalubengo@gmail.com</a>.</p>
       </section>
     </div>
   </div>
