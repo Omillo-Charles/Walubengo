@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Users, Award, Heart, MapPin, Calendar } from 'lucide-react';
+import 'flag-icon-css/css/flag-icons.min.css';
 
 const About = () => {
   const achievements = [
@@ -183,56 +184,56 @@ const About = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
               {/* Kenya */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
-                <span className="text-4xl mb-2">🇰🇪</span>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
+                <span className="flag-icon flag-icon-ke text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
                 <span className="font-semibold text-gray-900 text-lg mb-1">Kenya</span>
                 <span className="text-gray-500 text-sm">Home country and base of operations</span>
               </div>
               {/* Uganda */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
-                <span className="text-4xl mb-2">🇺🇬</span>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
+                <span className="flag-icon flag-icon-ug text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
                 <span className="font-semibold text-gray-900 text-lg mb-1">Uganda</span>
                 <span className="text-gray-500 text-sm">Youth leadership workshops in Kampala</span>
               </div>
               {/* Tanzania */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
-                <span className="text-4xl mb-2">🇹🇿</span>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
+                <span className="flag-icon flag-icon-tz text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
                 <span className="font-semibold text-gray-900 text-lg mb-1">Tanzania</span>
                 <span className="text-gray-500 text-sm">Keynote at Dar es Salaam youth summit</span>
               </div>
               {/* Rwanda */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
-                <span className="text-4xl mb-2">🇷🇼</span>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
+                <span className="flag-icon flag-icon-rw text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
                 <span className="font-semibold text-gray-900 text-lg mb-1">Rwanda</span>
                 <span className="text-gray-500 text-sm">Mentorship program in Kigali</span>
               </div>
               {/* South Africa */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
-                <span className="text-4xl mb-2">🇿🇦</span>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
+                <span className="flag-icon flag-icon-za text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
                 <span className="font-semibold text-gray-900 text-lg mb-1">South Africa</span>
                 <span className="text-gray-500 text-sm">Panelist at Johannesburg leadership forum</span>
               </div>
               {/* Nigeria */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
-                <span className="text-4xl mb-2">🇳🇬</span>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
+                <span className="flag-icon flag-icon-ng text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
                 <span className="font-semibold text-gray-900 text-lg mb-1">Nigeria</span>
                 <span className="text-gray-500 text-sm">Guest speaker at Lagos youth conference</span>
               </div>
               {/* Ghana */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
-                <span className="text-4xl mb-2">🇬🇭</span>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
+                <span className="flag-icon flag-icon-gh text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
                 <span className="font-semibold text-gray-900 text-lg mb-1">Ghana</span>
                 <span className="text-gray-500 text-sm">Empowerment seminar in Accra</span>
               </div>
               {/* United Kingdom */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
-                <span className="text-4xl mb-2">🇬🇧</span>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
+                <span className="flag-icon flag-icon-gb text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
                 <span className="font-semibold text-gray-900 text-lg mb-1">United Kingdom</span>
                 <span className="text-gray-500 text-sm">Leadership talk at London youth event</span>
               </div>
               {/* United States */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
-                <span className="text-4xl mb-2">🇺🇸</span>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
+                <span className="flag-icon flag-icon-us text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
                 <span className="font-semibold text-gray-900 text-lg mb-1">United States</span>
                 <span className="text-gray-500 text-sm">Panel guest at New York global summit</span>
               </div>

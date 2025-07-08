@@ -226,7 +226,7 @@ const Testimonials = () => {
       </section>
 
       {/* Testimonials Grid */}
-      <section className="py-20 bg-white">
+      <section id="testimonials-grid" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -296,10 +296,19 @@ const Testimonials = () => {
               Experience the transformation that thousands have already discovered. Let's create your success story together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-gold-600 hover:bg-gold-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2 hover:shadow-lg hover:scale-105">
+              <a
+                href="/contact"
+                className="bg-white text-gold-600 hover:bg-gold-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2 hover:shadow-lg hover:scale-105"
+              >
                 Book Consultation
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-gold-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2">
+              </a>
+              <button
+                className="border-2 border-white text-white hover:bg-white hover:text-gold-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2"
+                onClick={() => {
+                  const section = document.querySelector('#testimonials-grid');
+                  if (section) section.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 View All Reviews
               </button>
             </div>

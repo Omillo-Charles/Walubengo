@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BookOpen, Play, Headphones, ExternalLink, Download, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Books = () => {
   const mediaContent = [
@@ -45,6 +47,17 @@ const Books = () => {
       rating: 5
     }
   ];
+
+  const [notification, setNotification] = useState("");
+  const [notificationIndex, setNotificationIndex] = useState<number|null>(null);
+  const showNotification = (msg: string, idx: number) => {
+    setNotification(msg);
+    setNotificationIndex(idx);
+    setTimeout(() => {
+      setNotification("");
+      setNotificationIndex(null);
+    }, 4000);
+  };
 
   return (
     <div className="pt-20">
@@ -125,15 +138,26 @@ const Books = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-gold-600 hover:bg-gold-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 hover:shadow-lg hover:scale-105">
+                <button
+                  className="bg-gold-600 hover:bg-gold-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 hover:shadow-lg hover:scale-105"
+                  onClick={() => showNotification('Direct purchase from the website is currently unavailable. Please contact us for more information.', 0)}
+                >
                   <BookOpen size={20} />
                   Purchase Book - $19.99
                 </button>
-                <button className="border-2 border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                <button
+                  className="border-2 border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                  onClick={() => showNotification('Viewing a free sample is currently unavailable. Please contact us for more information.', 0)}
+                >
                   <Download size={20} />
                   Free Sample
                 </button>
               </div>
+              {notification && notificationIndex === 0 && (
+                <div className="mt-4 bg-gold-50 border border-gold-200 text-gold-700 px-6 py-4 rounded-lg shadow text-center font-medium transition-all duration-300 animate-fade-in">
+                  {notification}
+                </div>
+              )}
             </motion.div>
           </div>
         </div>
@@ -171,15 +195,26 @@ const Books = () => {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-gold-600 hover:bg-gold-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                <button
+                  className="bg-gold-600 hover:bg-gold-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 hover:shadow-lg hover:scale-105"
+                  onClick={() => showNotification('Direct purchase from the website is currently unavailable. Please contact us for more information.', 1)}
+                >
                   <BookOpen size={20} />
                   Purchase Book - $14.99
                 </button>
-                <button className="border-2 border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                <button
+                  className="border-2 border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                  onClick={() => showNotification('Viewing a free sample is currently unavailable. Please contact us for more information.', 1)}
+                >
                   <Download size={20} />
                   Free Sample
                 </button>
               </div>
+              {notification && notificationIndex === 1 && (
+                <div className="mt-4 bg-gold-50 border border-gold-200 text-gold-700 px-6 py-4 rounded-lg shadow text-center font-medium transition-all duration-300 animate-fade-in">
+                  {notification}
+                </div>
+              )}
             </motion.div>
             {/* Another Generation Book */}
             <motion.div
@@ -209,15 +244,26 @@ const Books = () => {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-gold-600 hover:bg-gold-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                <button
+                  className="bg-gold-600 hover:bg-gold-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 hover:shadow-lg hover:scale-105"
+                  onClick={() => showNotification('Direct purchase from the website is currently unavailable. Please contact us for more information.', 2)}
+                >
                   <BookOpen size={20} />
                   Purchase Book - $14.99
                 </button>
-                <button className="border-2 border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                <button
+                  className="border-2 border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                  onClick={() => showNotification('Viewing a free sample is currently unavailable. Please contact us for more information.', 2)}
+                >
                   <Download size={20} />
                   Free Sample
                 </button>
               </div>
+              {notification && notificationIndex === 2 && (
+                <div className="mt-4 bg-gold-50 border border-gold-200 text-gold-700 px-6 py-4 rounded-lg shadow text-center font-medium transition-all duration-300 animate-fade-in">
+                  {notification}
+                </div>
+              )}
             </motion.div>
           </div>
         </div>
@@ -480,14 +526,20 @@ const Books = () => {
               Join thousands of others who have been inspired and transformed by Bennyhinn's content.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-gold-600 hover:bg-gold-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2 hover:shadow-lg hover:scale-105">
+              <Link
+                to="/contact#form"
+                className="bg-white text-gold-600 hover:bg-gold-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2 hover:shadow-lg hover:scale-105"
+              >
                 <BookOpen size={20} />
                 Get the Book
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-gold-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2">
+              </Link>
+              <Link
+                to="/contact#form"
+                className="border-2 border-white text-white hover:bg-white hover:text-gold-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2"
+              >
                 <ExternalLink size={20} />
                 Follow on Social
-              </button>
+              </Link>
             </div>
           </motion.div>
         </div>
