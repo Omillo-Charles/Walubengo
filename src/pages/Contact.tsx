@@ -273,9 +273,9 @@ const Contact = () => {
             >
               <h3 className="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h3>
               
-              <div className="grid gap-4 sm:gap-6 w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="bg-gold-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300">
+                  <div key={index} className="bg-gold-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 w-full">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 bg-gold-600 rounded-full flex items-center justify-center flex-shrink-0">
                         <div className="text-white">{info.icon}</div>
