@@ -21,9 +21,9 @@ const Books = () => {
       followers: "Join the Movement",
       views: "Share Your Story",
       platforms: [
-        { name: "Instagram", url: "https://instagram.com/ispeakcommunity" },
-        { name: "Facebook", url: "https://facebook.com/ispeakcommunity" },
-        { name: "Twitter", url: "https://twitter.com/ispeakcommunity" }
+        { name: "Instagram", url: "https://instagram.com/orator_walubengo" },
+        { name: "Facebook", url: "https://facebook.com/hinn_walubengo" },
+        { name: "TikTok", url: "https://tiktok.com/@orator_walubengo" }
       ]
     }
   ];

@@ -245,7 +245,7 @@ const Services = () => {
                 <Calendar size={20} />
               </Link>
               <a
-                href="tel:+254700123456"
+                href="tel:+254794 959 895"
                 className="border-2 border-white text-white hover:bg-white hover:text-gold-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2"
               >
                 Call Now

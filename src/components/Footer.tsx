@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Youtube, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Youtube, Facebook, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -17,22 +17,50 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://instagram.com/orator_walubengo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
                 className="w-10 h-10 bg-gold-600 rounded-full flex items-center justify-center hover:bg-gold-dark transition-colors duration-300"
               >
                 <Instagram size={20} className="text-white" />
               </a>
               <a
-                href="#"
+                href="https://facebook.com/hinn_walubengo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="w-10 h-10 bg-gold-600 rounded-full flex items-center justify-center hover:bg-gold-dark transition-colors duration-300"
+              >
+                <Facebook size={20} className="text-white" />
+              </a>
+              <a
+                href="https://linkedin.com/in/bennyhinnwalubengo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="w-10 h-10 bg-gold-600 rounded-full flex items-center justify-center hover:bg-gold-dark transition-colors duration-300"
+              >
+                <Linkedin size={20} className="text-white" />
+              </a>
+              <a
+                href="https://tiktok.com/@orator_walubengo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                className="w-10 h-10 bg-gold-600 rounded-full flex items-center justify-center hover:bg-gold-dark transition-colors duration-300"
+              >
+                {/* TikTok SVG icon for consistency */}
+                <svg viewBox="0 0 32 32" width="20" height="20" fill="white"><path d="M28.5 10.7c-2.1 0-3.8-1.7-3.8-3.8V4.1c0-0.6-0.5-1.1-1.1-1.1h-3.2c-0.6 0-1.1 0.5-1.1 1.1v17.1c0 1.7-1.4 3.1-3.1 3.1s-3.1-1.4-3.1-3.1c0-1.7 1.4-3.1 3.1-3.1 0.6 0 1.1-0.5 1.1-1.1v-3.2c0-0.6-0.5-1.1-1.1-1.1-5.1 0-9.2 4.1-9.2 9.2s4.1 9.2 9.2 9.2c5.1 0 9.2-4.1 9.2-9.2v-7.1c1.2 0.7 2.6 1.1 4.1 1.1 0.6 0 1.1-0.5 1.1-1.1v-3.2c0-0.6-0.5-1.1-1.1-1.1z"></path></svg>
+              </a>
+              <a
+                href="https://youtube.com/@Walubengo_"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
                 className="w-10 h-10 bg-gold-600 rounded-full flex items-center justify-center hover:bg-gold-dark transition-colors duration-300"
               >
                 <Youtube size={20} className="text-white" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-gold-600 rounded-full flex items-center justify-center hover:bg-gold-dark transition-colors duration-300"
-              >
-                <MessageCircle size={20} className="text-white" />
               </a>
             </div>
           </div>
