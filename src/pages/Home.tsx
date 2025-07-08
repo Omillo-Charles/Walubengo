@@ -15,13 +15,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
         {/* Background Elements */}
-        <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
           <div className="absolute top-20 left-20 w-64 h-64 border border-gold-light rounded-full"></div>
           <div className="absolute bottom-20 right-20 w-32 h-32 border border-gold-light rounded-full"></div>
           <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gold-light rounded-full"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
             <motion.div
