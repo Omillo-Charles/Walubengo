@@ -214,7 +214,7 @@ const Contact = () => {
               <h4 className="font-semibold text-black mb-2">Quick Connect</h4>
               <p className="text-black/80 mb-4">Need immediate assistance? Connect with us on WhatsApp.</p>
               <a
-                href="https://wa.me/254700123456"
+                href="https://wa.me/254794959895"
                 className="bg-[#D4AF37] hover:bg-[#B8941F] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2"
               >
                 <MessageCircle size={20} />
