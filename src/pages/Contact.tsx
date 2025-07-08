@@ -91,7 +91,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 w-full overflow-x-hidden">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-gold-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -115,8 +115,8 @@ const Contact = () => {
 
       {/* Contact Form & Info */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 w-full">
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -137,8 +137,8 @@ const Contact = () => {
                   <p className="text-gold-600">Your message has been sent successfully. We'll get back to you within 24 hours.</p>
                 </motion.div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
+                <form onSubmit={handleSubmit} className="space-y-6 w-full">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <div>
                       <label className="block text-gray-700 font-medium mb-2">Full Name *</label>
                       <input
@@ -165,7 +165,7 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <div>
                       <label className="block text-gray-700 font-medium mb-2">Phone Number</label>
                       <input
@@ -190,7 +190,7 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <div>
                       <label className="block text-gray-700 font-medium mb-2">Event Type *</label>
                       <select
@@ -269,11 +269,11 @@ const Contact = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="space-y-8"
+              className="space-y-8 w-full"
             >
               <h3 className="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h3>
               
-              <div className="grid gap-6">
+              <div className="grid gap-4 sm:gap-6 w-full">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="bg-gold-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300">
                     <div className="flex items-start space-x-4">
@@ -295,7 +295,7 @@ const Contact = () => {
               </div>
 
               {/* Social Media */}
-              <div className="bg-gold-50 rounded-2xl p-8">
+              <div className="bg-gold-50 rounded-2xl p-8 w-full">
                 <h4 className="font-bold text-gray-900 mb-4">Follow the Journey</h4>
                 <p className="text-gold-600 mb-6">Stay connected for daily inspiration and updates.</p>
                 <div className="flex space-x-4">
@@ -321,7 +321,7 @@ const Contact = () => {
               </div>
 
               {/* WhatsApp Quick Contact */}
-              <div className="bg-gold-50 rounded-2xl p-8 border-2 border-gold-100">
+              <div className="bg-gold-50 rounded-2xl p-8 border-2 border-gold-100 w-full">
                 <h4 className="font-bold text-gray-900 mb-2">Quick Connect</h4>
                 <p className="text-gold-600 mb-4">Need immediate assistance? Connect with us on WhatsApp for faster response.</p>
                 <a

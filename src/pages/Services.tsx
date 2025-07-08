@@ -1,40 +1,56 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Mic, Users, Building, Calendar, ArrowRight, CheckCircle } from 'lucide-react';
+import { Mic, Users, Building, Calendar, ArrowRight, CheckCircle, Heart } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: <Mic size={48} />,
-      title: "Keynote Speaking",
-      description: "Inspirational keynotes that captivate audiences and drive meaningful change.",
-      features: ["Conference Keynotes", "Motivational Talks", "Panel Discussions", "Graduation Speeches"],
+      title: "Public Speaking",
+      description: "Dynamic and impactful public speaking engagements tailored to inspire, educate, and motivate diverse audiences.",
+      features: ["Keynote Addresses", "Panel Discussions", "Conference Talks", "Event Hosting"],
       price: "From $2,500",
       popular: false
     },
     {
       icon: <Users size={48} />,
-      title: "Youth Mentorship",
-      description: "Comprehensive mentorship programs designed to unlock potential and build leaders.",
-      features: ["One-on-One Mentoring", "Group Sessions", "Leadership Training", "Goal Setting Workshops"],
+      title: "Leadership & Mentorship",
+      description: "Empowering individuals and groups through transformative leadership and mentorship programs.",
+      features: ["One-on-One Mentoring", "Group Leadership Sessions", "Youth Empowerment", "Personal Development"],
       price: "From $1,500",
       popular: true
     },
     {
+      icon: <CheckCircle size={48} />,
+      title: "Branding Strategies",
+      description: "Strategic branding services to help you define, position, and grow your brand for maximum impact.",
+      features: ["Brand Positioning", "Strategic Messaging", "Identity Development", "Content Planning"],
+      price: "From $2,000",
+      popular: false
+    },
+    {
       icon: <Building size={48} />,
-      title: "Corporate Training",
-      description: "Leadership development and team building programs for organizations.",
-      features: ["Leadership Development", "Team Building", "Communication Skills", "Strategic Planning"],
-      price: "From $3,500",
+      title: "Research Innovation",
+      description: "Cutting-edge research and innovative solutions to drive growth and address emerging challenges.",
+      features: ["Market Research", "Trend Analysis", "Innovation Workshops", "Data-Driven Insights"],
+      price: "From $3,000",
       popular: false
     },
     {
       icon: <Calendar size={48} />,
-      title: "Event Hosting",
-      description: "Professional event hosting and facilitation for memorable experiences.",
-      features: ["Master of Ceremonies", "Panel Moderation", "Conference Facilitation", "Award Ceremonies"],
-      price: "From $1,000",
+      title: "Partnership Building",
+      description: "Building strategic partnerships to foster collaboration and expand opportunities for impact.",
+      features: ["Stakeholder Engagement", "Collaborative Projects", "Network Expansion", "Resource Mobilization"],
+      price: "From $1,800",
+      popular: false
+    },
+    {
+      icon: <Heart size={48} />,
+      title: "Local–Glocal Impacts",
+      description: "Driving positive change at both local and global levels through innovative programs and initiatives.",
+      features: ["Community Projects", "Global Outreach", "Sustainable Development", "Impact Measurement"],
+      price: "Custom Pricing",
       popular: false
     }
   ];

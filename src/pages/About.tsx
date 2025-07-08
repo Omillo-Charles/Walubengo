@@ -165,47 +165,79 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* Countries Visited Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              The <span className="text-gold-600">Journey</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Countries <span className="text-gold-600">Visited</span>
             </h2>
-            <p className="text-xl text-gray-600">
-              From humble beginnings to national recognition - a timeline of transformation.
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+              Bennyhinn Walubengo has shared his message and inspired audiences across the globe. Here are some of the countries he has visited:
             </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+              {/* Kenya */}
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                <span className="text-4xl mb-2">🇰🇪</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Kenya</span>
+                <span className="text-gray-500 text-sm">Home country and base of operations</span>
+              </div>
+              {/* Uganda */}
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                <span className="text-4xl mb-2">🇺🇬</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Uganda</span>
+                <span className="text-gray-500 text-sm">Youth leadership workshops in Kampala</span>
+              </div>
+              {/* Tanzania */}
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                <span className="text-4xl mb-2">🇹🇿</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Tanzania</span>
+                <span className="text-gray-500 text-sm">Keynote at Dar es Salaam youth summit</span>
+              </div>
+              {/* Rwanda */}
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                <span className="text-4xl mb-2">🇷🇼</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Rwanda</span>
+                <span className="text-gray-500 text-sm">Mentorship program in Kigali</span>
+              </div>
+              {/* South Africa */}
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                <span className="text-4xl mb-2">🇿🇦</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">South Africa</span>
+                <span className="text-gray-500 text-sm">Panelist at Johannesburg leadership forum</span>
+              </div>
+              {/* Nigeria */}
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                <span className="text-4xl mb-2">🇳🇬</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Nigeria</span>
+                <span className="text-gray-500 text-sm">Guest speaker at Lagos youth conference</span>
+              </div>
+              {/* Ghana */}
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                <span className="text-4xl mb-2">🇬🇭</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Ghana</span>
+                <span className="text-gray-500 text-sm">Empowerment seminar in Accra</span>
+              </div>
+              {/* United Kingdom */}
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                <span className="text-4xl mb-2">🇬🇧</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">United Kingdom</span>
+                <span className="text-gray-500 text-sm">Leadership talk at London youth event</span>
+              </div>
+              {/* United States */}
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                <span className="text-4xl mb-2">🇺🇸</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">United States</span>
+                <span className="text-gray-500 text-sm">Panel guest at New York global summit</span>
+              </div>
+            </div>
           </motion.div>
-
-          <div className="relative">
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gold-200"></div>
-            
-            {timeline.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="relative flex items-start mb-12"
-              >
-                <div className="flex-shrink-0 w-16 h-16 bg-gold-600 rounded-full flex items-center justify-center text-white font-bold z-10">
-                  {item.year.slice(-2)}
-                </div>
-                <div className="ml-8 bg-white p-6 rounded-xl shadow-lg border border-gold-100 flex-1">
-                  <div className="text-gray-900 font-semibold mb-1">{item.year}</div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-600">{item.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 

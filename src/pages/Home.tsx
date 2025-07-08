@@ -140,6 +140,53 @@ const Home = () => {
         </div>
       </section>
 
+      {/* What We Stand For Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              What We <span className="text-gold-600">Stand For</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+              Our core values drive everything we do, shaping our mission and inspiring our community.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full">
+                <span className="text-3xl mb-2">💪</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Empowerment</span>
+                <span className="text-gray-500 text-sm">We uplift and enable others to reach their full potential.</span>
+              </div>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full">
+                <span className="text-3xl mb-2">🏆</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Excellence</span>
+                <span className="text-gray-500 text-sm">We pursue the highest standards in all our endeavors.</span>
+              </div>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full">
+                <span className="text-3xl mb-2">🎤</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Public Speaking</span>
+                <span className="text-gray-500 text-sm">We inspire and educate through powerful, authentic communication.</span>
+              </div>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full">
+                <span className="text-3xl mb-2">🧑‍🤝‍🧑</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Leadership & Mentorship</span>
+                <span className="text-gray-500 text-sm">We guide, mentor, and develop the next generation of leaders.</span>
+              </div>
+              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full">
+                <span className="text-3xl mb-2">📦</span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Brand Packaging</span>
+                <span className="text-gray-500 text-sm">We help ideas and people stand out through creative brand solutions.</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Featured Quote */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
