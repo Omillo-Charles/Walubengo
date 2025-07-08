@@ -99,12 +99,12 @@ const Books = () => {
                   <Play size={24} className="text-white" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-black">Video Content</h4>
-                  <p className="text-black/70">Motivational talks and TikTok inspiration</p>
+                  <h4 className="text-xl font-bold text-black">iSpeak Society Highlights</h4>
+                  <p className="text-black/70">Inspirational highlights and TikTok moments</p>
                 </div>
               </div>
               <p className="text-black/80 mb-4">
-                Access powerful video content including keynote speeches, motivational talks, and daily inspiration on TikTok and YouTube.
+                Access powerful video content including keynote speeches, iSpeak Society highlights, and daily inspiration on TikTok and YouTube.
               </p>
               <button className="text-[#D4AF37] hover:text-[#B8941F] font-semibold flex items-center gap-2 transition-colors duration-300">
                 <ExternalLink size={16} />
