@@ -282,9 +282,19 @@ const Contact = () => {
                       </div>
                       <div className="flex-1">
                         <h4 className="font-bold text-gray-900 mb-2">{info.title}</h4>
-                        {info.details.map((detail, detailIndex) => (
-                          <p key={detailIndex} className="text-gold-600 mb-1">{detail}</p>
-                        ))}
+                        {info.title === 'Email'
+                          ? info.details.map((detail, detailIndex) => {
+                              const [user, domain] = detail.split('@');
+                              return (
+                                <p key={detailIndex} className="text-gold-600 mb-1 break-all">
+                                  {user}
+                                  <br />@{domain}
+                                </p>
+                              );
+                            })
+                          : info.details.map((detail, detailIndex) => (
+                              <p key={detailIndex} className="text-gold-600 mb-1">{detail}</p>
+                            ))}
                         <button className="text-gold-600 hover:text-gold-700 font-medium text-sm mt-2 transition-colors duration-200">
                           {info.action} →
                         </button>
