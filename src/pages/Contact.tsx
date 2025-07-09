@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Instagram, Youtube, MessageCircle, Clock, CheckCircle, Facebook, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Instagram, Youtube, MessageCircle, Clock, CheckCircle, Facebook, Linkedin, ExternalLink } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -329,16 +329,6 @@ const Contact = () => {
                    >
                      <Facebook size={24} className="text-white" />
                    </a>
-                   {/* LinkedIn */}
-                   <a
-                     href="https://linkedin.com/in/bennyhinnwalubengo"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     aria-label="LinkedIn"
-                     className="w-12 h-12 bg-gold-600 rounded-full flex items-center justify-center hover:bg-gold-700 transition-colors duration-300"
-                   >
-                     <Linkedin size={24} className="text-white" />
-                   </a>
                    {/* TikTok */}
                    <a
                      href="https://tiktok.com/@orator_walubengo"
@@ -358,6 +348,16 @@ const Contact = () => {
                      className="w-12 h-12 bg-gold-600 rounded-full flex items-center justify-center hover:bg-gold-700 transition-colors duration-300"
                    >
                      <Youtube size={24} className="text-white" />
+                   </a>
+                   {/* Website */}
+                   <a
+                     href="https://www.walubengo.com"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     aria-label="Website"
+                     className="w-12 h-12 bg-gold-600 rounded-full flex items-center justify-center hover:bg-gold-700 transition-colors duration-300"
+                   >
+                     <ExternalLink size={24} className="text-white" />
                    </a>
                   </div>
               </div>

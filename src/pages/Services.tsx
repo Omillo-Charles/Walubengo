@@ -7,10 +7,34 @@ const Services = () => {
   const services = [
     {
       icon: <Mic size={48} />,
-      title: "Public Speaking",
+      title: "Professional Public Speaking",
       description: "Dynamic and impactful public speaking engagements tailored to inspire, educate, and motivate diverse audiences.",
       features: ["Keynote Addresses", "Panel Discussions", "Conference Talks", "Event Hosting"],
       price: "From $2,500",
+      popular: true
+    },
+    {
+      icon: <Users size={48} />,
+      title: "Content Strategy",
+      description: "Strategic content planning and messaging to help you communicate your vision and value.",
+      features: ["Content Planning", "Strategic Messaging", "Storytelling", "Audience Engagement"],
+      price: "From $1,500",
+      popular: false
+    },
+    {
+      icon: <CheckCircle size={48} />,
+      title: "Proposal Writing",
+      description: "Professional proposal writing services to help you secure opportunities and partnerships.",
+      features: ["Grant Proposals", "Business Proposals", "Sponsorship Proposals", "Custom Requests"],
+      price: "From $1,200",
+      popular: false
+    },
+    {
+      icon: <Mic size={48} />,
+      title: "Public Speaking",
+      description: "Coaching and training for individuals and teams to master the art of public speaking.",
+      features: ["Speech Coaching", "Presentation Skills", "Confidence Building", "Voice Training"],
+      price: "From $1,000",
       popular: false
     },
     {
@@ -19,19 +43,19 @@ const Services = () => {
       description: "Empowering individuals and groups through transformative leadership and mentorship programs.",
       features: ["One-on-One Mentoring", "Group Leadership Sessions", "Youth Empowerment", "Personal Development"],
       price: "From $1,500",
-      popular: true
+      popular: false
     },
     {
       icon: <CheckCircle size={48} />,
       title: "Branding Strategies",
       description: "Strategic branding services to help you define, position, and grow your brand for maximum impact.",
-      features: ["Brand Positioning", "Strategic Messaging", "Identity Development", "Content Planning"],
+      features: ["Brand Positioning", "Identity Development", "Brand Messaging", "Brand Workshops"],
       price: "From $2,000",
       popular: false
     },
     {
       icon: <Building size={48} />,
-      title: "Research Innovation",
+      title: "Research & Innovation",
       description: "Cutting-edge research and innovative solutions to drive growth and address emerging challenges.",
       features: ["Market Research", "Trend Analysis", "Innovation Workshops", "Data-Driven Insights"],
       price: "From $3,000",

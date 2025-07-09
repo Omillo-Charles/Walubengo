@@ -35,15 +35,6 @@ const Footer = () => {
                 <Facebook size={20} className="text-white" />
               </a>
               <a
-                href="https://linkedin.com/in/bennyhinnwalubengo"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="w-10 h-10 bg-gold-600 rounded-full flex items-center justify-center hover:bg-gold-dark transition-colors duration-300"
-              >
-                <Linkedin size={20} className="text-white" />
-              </a>
-              <a
                 href="https://tiktok.com/@orator_walubengo"
                 target="_blank"
                 rel="noopener noreferrer"

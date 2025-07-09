@@ -17,7 +17,7 @@ const Testimonials = () => {
     {
       name: "James Ochieng",
       role: "Young Entrepreneur",
-      content: "The Voice of Benny Foundation changed my life trajectory. Through their programs, I learned valuable business skills and connected with like-minded youth who share my vision for success.",
+      content: "iSpeak Society changed my life trajectory. Through their programs, I learned valuable business skills and connected with like-minded youth who share my vision for success.",
       image: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400",
       rating: 5,
       company: "Tech Startup Founder"

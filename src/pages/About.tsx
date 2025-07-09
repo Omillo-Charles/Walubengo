@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Target, Users, Award, Heart, MapPin, Calendar } from 'lucide-react';
+import { Target, Users, Award, Heart, MapPin, Calendar, Star, Globe, BookOpen, Users as UsersIcon, CheckCircle, Briefcase, Image as ImageIcon, Handshake, Mic } from 'lucide-react';
 import 'flag-icon-css/css/flag-icons.min.css';
 
 const About = () => {
@@ -73,17 +73,20 @@ const About = () => {
             >
               <div className="inline-block bg-gold-100 text-gray-900 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <MapPin size={16} className="inline mr-2" />
-                From Baba Dogo to National Stage
+                From Nairobi to Global Impact
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                A Journey of <span className="text-gold-600">Purpose</span> and <span className="text-gold-600">Impact</span>
+                BennyHinn Walubengo
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Born and raised in Baba Dogo, Nairobi, Bennyhinn Walubengo has risen to become one of Kenya's most influential youth voices. His journey from humble beginnings to national recognition is a testament to the power of purpose-driven leadership.
+                BennyHinn Walubengo is a dynamic force in the world of oratory, strategy, and education. As an accomplished minister of the gospel, author, and speech trainer, he has carved a unique niche for himself, inspiring and empowering individuals across various spheres.
               </p>
-              <div className="flex items-center gap-4 text-gray-600">
+              <div className="flex items-center gap-4 text-gray-600 mb-4">
                 <Calendar size={20} className="text-gold-600" />
-                <span>Transforming lives since 2015</span>
+                <span>Currently pursuing International Relations and Diplomacy at Daystar University</span>
+              </div>
+              <div className="text-gray-600 text-base">
+                His academic journey at Daystar University has equipped him with a strong foundation in global affairs and strategic thinking. His passion for learning and personal growth is evident in his continuous pursuit of knowledge.
               </div>
             </motion.div>
 
@@ -93,14 +96,16 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <img
-                src="/Walubengo.png"
-                alt="Bennyhinn Walubengo portrait"
-                className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
-              />
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
-                <div className="text-3xl font-bold text-gold-600">9+</div>
-                <div className="text-gray-600">Years of Impact</div>
+              <div className="relative flex flex-col items-center justify-center">
+                <img
+                  src="/Walubengo.png"
+                  alt="Bennyhinn Walubengo portrait"
+                  className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
+                />
+                <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                  <div className="text-3xl font-bold text-gold-600">9+</div>
+                  <div className="text-gray-600">Years of Impact</div>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -121,7 +126,7 @@ const About = () => {
               Vision 2029: Transforming 10 Million Lives
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              As the founder of The Voice of Benny Foundation, Bennyhinn has dedicated his life to empowering the next generation through mentorship, speaking engagements, and transformational programs. His mission is clear and ambitious: to impact 10 million youth across Africa by 2029.
+              As the founder of <span className='font-semibold text-gold-600'>iSpeak Academy</span>, Bennyhinn has dedicated his life to empowering the next generation through mentorship, speaking engagements, and transformational programs. His mission is clear and ambitious: to impact 10 million youth across Africa by 2029.
             </p>
           </motion.div>
         </div>
@@ -166,6 +171,144 @@ const About = () => {
         </div>
       </section>
 
+      {/* Add new sections for Founder, Chief Visionary, Core Pillars, Core Values, Impact Footprint */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Founder & Chief Visionary Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col justify-center h-full"
+            >
+              <div className="flex items-center mb-6">
+                <UsersIcon size={28} className="text-gold-600 mr-2" />
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Founder & Chief Visionary</h2>
+              </div>
+              <div className="space-y-6 text-lg text-gray-700">
+                {/* iSpeak Society */}
+                <div className="flex items-start gap-4">
+                  <UsersIcon size={22} className="text-gold-600 mt-1" />
+                  <div>
+                    <span className="font-semibold text-gold-700 text-lg">iSpeak Society</span>
+                    <div className="text-gray-700">Empowers African youth with communication skills to advocate for themselves, their communities, and the continent's future. <span className='text-gray-500'>(Nairobi-based, digital media across Africa)</span></div>
+                  </div>
+                </div>
+                <div className="border-t border-gold-200 my-2" />
+                {/* iSpeak Academy */}
+                <div className="flex items-start gap-4">
+                  <Mic size={22} className="text-gold-600 mt-1" />
+                  <div>
+                    <span className="font-semibold text-gold-700 text-lg">iSpeak Academy</span>
+                    <div className="text-gray-700">Global platform for raising culture shapers through public speaking, leadership, and mindset transformation. <span className='text-gray-500'>(Storytelling, identity, cultural intelligence)</span></div>
+                  </div>
+                </div>
+                <div className="border-t border-gold-200 my-2" />
+                {/* Double B Consultancy */}
+                <div className="flex items-start gap-4">
+                  <Briefcase size={22} className="text-gold-600 mt-1" />
+                  <div>
+                    <span className="font-semibold text-gold-700 text-lg">Double B Consultancy</span>
+                    <div className="text-gray-700">Strategic firm blending digital packaging and speech training. <span className='text-gray-500'>(Prepares for corporate, government, NGO spaces)</span></div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+            {/* Core Pillars & Awards Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col justify-center h-full"
+            >
+              <div className="flex items-center justify-center mb-4">
+                <Award size={28} className="text-gold-600 mr-2" />
+                <h2 className="text-2xl font-bold text-gray-900 text-center">Core Pillars & Awards</h2>
+              </div>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 h-full">
+                <div className="flex flex-col items-center bg-gold-50 border border-gold-100 rounded-xl p-6 shadow-sm h-full justify-center text-center">
+                  <Star size={24} className="text-gold-600 mb-2" />
+                  <span className="font-bold text-gold-700 text-lg mb-1">14 Awards</span>
+                  <span className="text-gray-500 text-sm">in Public Speaking</span>
+                </div>
+                <div className="flex flex-col items-center bg-gold-50 border border-gold-100 rounded-xl p-6 shadow-sm h-full justify-center text-center">
+                  <Mic size={24} className="text-gold-600 mb-2" />
+                  <span className="font-semibold text-gray-900 text-lg mb-1">Public Speaking</span>
+                </div>
+                <div className="flex flex-col items-center bg-gold-50 border border-gold-100 rounded-xl p-6 shadow-sm h-full justify-center text-center">
+                  <UsersIcon size={24} className="text-gold-600 mb-2" />
+                  <span className="font-semibold text-gray-900 text-lg mb-1 whitespace-normal">Leadership &amp; Mentorship</span>
+                </div>
+                <div className="flex flex-col items-center bg-gold-50 border border-gold-100 rounded-xl p-6 shadow-sm h-full justify-center text-center">
+                  <Briefcase size={24} className="text-gold-600 mb-2" />
+                  <span className="font-semibold text-gray-900 text-lg mb-1">Brand Packaging</span>
+                </div>
+              </div>
+            </motion.div>
+            {/* Core Values Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col justify-center h-full"
+            >
+              <div className="flex items-center justify-center mb-4">
+                <CheckCircle size={28} className="text-gold-600 mr-2" />
+                <h2 className="text-2xl font-bold text-gray-900 text-center">Core Values</h2>
+              </div>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 h-full">
+                <div className="flex flex-col items-center bg-gold-50 border border-gold-100 rounded-xl p-6 shadow-sm h-full justify-center">
+                  <span className="text-3xl mb-2">💪</span>
+                  <span className="font-semibold text-gray-900 text-lg mb-1">Empowerment</span>
+                  <span className="text-gray-500 text-sm text-center">Especially youth, through communication</span>
+                </div>
+                <div className="flex flex-col items-center bg-gold-50 border border-gold-100 rounded-xl p-6 shadow-sm h-full justify-center">
+                  <span className="text-3xl mb-2">🏆</span>
+                  <span className="font-semibold text-gray-900 text-lg mb-1">Excellence</span>
+                  <span className="text-gray-500 text-sm text-center">High standards in training and mentorship</span>
+                </div>
+              </div>
+            </motion.div>
+            {/* Impact Footprint Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl p-8 shadow-lg border border-gold-100 flex flex-col justify-center h-full"
+            >
+              <div className="flex items-center justify-center mb-4">
+                <Globe size={28} className="text-gold-600 mr-2" />
+                <h2 className="text-2xl font-bold text-gray-900 text-center">Impact Footprint</h2>
+              </div>
+              <p className="text-lg text-gray-700 text-center mb-6">Walubengo has worked with individuals and organizations across:</p>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 h-full">
+                <div className="flex flex-col items-center bg-gold-50 border border-gold-100 rounded-xl p-6 shadow-sm h-full justify-center">
+                  <Globe size={24} className="text-gold-600 mb-2" />
+                  <span className="font-semibold text-gray-900 text-lg mb-1">Africa</span>
+                </div>
+                <div className="flex flex-col items-center bg-gold-50 border border-gold-100 rounded-xl p-6 shadow-sm h-full justify-center">
+                  <Globe size={24} className="text-gold-600 mb-2" />
+                  <span className="font-semibold text-gray-900 text-lg mb-1">Europe</span>
+                </div>
+                <div className="flex flex-col items-center bg-gold-50 border border-gold-100 rounded-xl p-6 shadow-sm h-full justify-center">
+                  <Globe size={24} className="text-gold-600 mb-2" />
+                  <span className="font-semibold text-gray-900 text-lg mb-1">Asia</span>
+                </div>
+                <div className="flex flex-col items-center bg-gold-50 border border-gold-100 rounded-xl p-6 shadow-sm h-full justify-center">
+                  <Globe size={24} className="text-gold-600 mb-2" />
+                  <span className="font-semibold text-gray-900 text-lg mb-1">America</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Countries Visited Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -193,49 +336,31 @@ const About = () => {
               <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
                 <span className="flag-icon flag-icon-ug text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
                 <span className="font-semibold text-gray-900 text-lg mb-1">Uganda</span>
-                <span className="text-gray-500 text-sm">Youth leadership workshops in Kampala</span>
+                <span className="text-gray-500 text-sm">Business Executive Masterclass</span>
               </div>
-              {/* Tanzania */}
+              {/* Ethiopia */}
               <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
-                <span className="flag-icon flag-icon-tz text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
-                <span className="font-semibold text-gray-900 text-lg mb-1">Tanzania</span>
-                <span className="text-gray-500 text-sm">Keynote at Dar es Salaam youth summit</span>
+                <span className="flag-icon flag-icon-et text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Ethiopia</span>
+                <span className="text-gray-500 text-sm">National youth conference</span>
               </div>
-              {/* Rwanda */}
+              {/* Mozambique */}
               <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
-                <span className="flag-icon flag-icon-rw text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
-                <span className="font-semibold text-gray-900 text-lg mb-1">Rwanda</span>
-                <span className="text-gray-500 text-sm">Mentorship program in Kigali</span>
+                <span className="flag-icon flag-icon-mz text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Mozambique</span>
+                <span className="text-gray-500 text-sm">National youth outreach program</span>
               </div>
               {/* South Africa */}
               <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
                 <span className="flag-icon flag-icon-za text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
                 <span className="font-semibold text-gray-900 text-lg mb-1">South Africa</span>
-                <span className="text-gray-500 text-sm">Panelist at Johannesburg leadership forum</span>
+                <span className="text-gray-500 text-sm">Youth education strategy meeting</span>
               </div>
-              {/* Nigeria */}
+              {/* Zambia */}
               <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
-                <span className="flag-icon flag-icon-ng text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
-                <span className="font-semibold text-gray-900 text-lg mb-1">Nigeria</span>
-                <span className="text-gray-500 text-sm">Guest speaker at Lagos youth conference</span>
-              </div>
-              {/* Ghana */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
-                <span className="flag-icon flag-icon-gh text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
-                <span className="font-semibold text-gray-900 text-lg mb-1">Ghana</span>
-                <span className="text-gray-500 text-sm">Empowerment seminar in Accra</span>
-              </div>
-              {/* United Kingdom */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
-                <span className="flag-icon flag-icon-gb text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
-                <span className="font-semibold text-gray-900 text-lg mb-1">United Kingdom</span>
-                <span className="text-gray-500 text-sm">Leadership talk at London youth event</span>
-              </div>
-              {/* United States */}
-              <div className="bg-white border border-gold-100 rounded-2xl p-6 flex flex-col items-center shadow-lg w-full max-w-xs mx-auto">
-                <span className="flag-icon flag-icon-us text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
-                <span className="font-semibold text-gray-900 text-lg mb-1">United States</span>
-                <span className="text-gray-500 text-sm">Panel guest at New York global summit</span>
+                <span className="flag-icon flag-icon-zm text-7xl mb-2 drop-shadow-lg" style={{ fontSize: '5rem' }}></span>
+                <span className="font-semibold text-gray-900 text-lg mb-1">Zambia</span>
+                <span className="text-gray-500 text-sm">Building faith and exemplary business</span>
               </div>
             </div>
           </motion.div>
