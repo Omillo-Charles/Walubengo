@@ -261,6 +261,22 @@ const Contact = () => {
                   </button>
                 </form>
               )}
+
+              {/* Profile Download Card (below the form, same column) */}
+              <div className="bg-white border-2 border-gold-200 rounded-2xl p-6 mt-6 shadow flex flex-col items-center w-full">
+                <h4 className="text-lg font-semibold text-gold-700 mb-2 text-center">Download Bennyhinn Walubengo's full professional profile (PDF)</h4>
+                <p className="text-gray-600 mb-4 text-center text-sm">Perfect for event organizers, partners, and media. Get all the details you need in one document.</p>
+                <a
+                  href="/Walubengo_Profile_2025-1.pdf"
+                  download
+                  className="bg-gold-600 hover:bg-gold-700 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 shadow hover:scale-105"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 16.5v-12m0 12l-3.75-3.75M12 16.5l3.75-3.75M21 21.75H3" />
+                  </svg>
+                  Download Profile (PDF)
+                </a>
+              </div>
             </motion.div>
 
             {/* Contact Information */}
